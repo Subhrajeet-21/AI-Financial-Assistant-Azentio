@@ -18,28 +18,27 @@ An AI-powered Financial Assistant that answers questions from financial reports 
 ---
 
 # 🚀 Features
+1. Financial PDF Ingestion
 
-✅ Financial PDF Ingestion
+2. Financial Table Extraction
 
-✅ Financial Table Extraction
+3. Excel Generation
 
-✅ Excel Generation
+4. Text Chunking
 
-✅ Text Chunking
+5. Sentence Transformer Embeddings
 
-✅ Sentence Transformer Embeddings
+6. FAISS Vector Database
 
-✅ FAISS Vector Database
+7. Retrieval-Augmented Generation (RAG)
 
-✅ Retrieval-Augmented Generation (RAG)
+8. Google Gemini API
 
-✅ Google Gemini API
+9. Role-Based Access Control
 
-✅ Role-Based Access Control
+10. Feedback Collection
 
-✅ Feedback Collection
-
-✅ Interactive Gradio Web Interface
+11. Interactive Gradio Web Interface
 
 ---
 
@@ -309,13 +308,35 @@ Launch the Gradio interface.
 
 ---
 
+# 🖼️ Demo
+
+## Home Page
+
+<img width="1395" height="819" alt="Screenshot 2026-08-07 223054" src="https://github.com/user-attachments/assets/5c36390a-3737-48e6-928d-ca48571490f4" />
+
+
+## CEO Query
+
+<img width="1374" height="600" alt="Screenshot 2026-08-07 223122" src="https://github.com/user-attachments/assets/7dbaf76a-bb4c-46ea-a8e7-567b3f47db6f" />
+
+
+## RBAC
+
+<img width="1367" height="577" alt="Screenshot 2026-08-07 223152" src="https://github.com/user-attachments/assets/0e1ea578-cdd3-4722-9121-d848ce982585" />
+
+
+## Feedback
+
+<img width="1330" height="597" alt="Screenshot 2026-08-07 223223" src="https://github.com/user-attachments/assets/8d9fc6e6-a6e0-49f8-b423-b43bc86d2817" />
+
+
 # 👨‍💻 Author
 
 **Subhrajeet Mohanty**
 
 AI Agent Developer Assessment
 
-SOA University
+ITER, SOA University
 
 ---
 
