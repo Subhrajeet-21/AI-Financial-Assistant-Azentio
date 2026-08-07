@@ -1,75 +1,239 @@
 # AI-Financial-Assistant-Azentio
 AI Financial Assistant using RAG, Google Gemini API, FAISS, Role-Based Access Control, and Gradio.
 
-# AI Financial Assistant
+# 📊 AI Financial Assistant
 
-## Overview
+<p align="center">
 
-This project is an AI-powered Financial Assistant developed as part of the Azentio AI Agent Developer Assessment.
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![Google Gemini](https://img.shields.io/badge/Google-Gemini_API-orange?logo=google)
+![FAISS](https://img.shields.io/badge/FAISS-Vector_DB-green)
+![Gradio](https://img.shields.io/badge/Gradio-Web_UI-red)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-The assistant answers financial questions from company reports using Retrieval-Augmented Generation (RAG). It combines semantic search with Google's Gemini API to generate accurate responses while enforcing Role-Based Access Control (RBAC).
+An AI-powered Financial Assistant that answers questions from financial reports using **Retrieval-Augmented Generation (RAG)**, **Google Gemini API**, **FAISS**, and **Role-Based Access Control (RBAC)**.
 
----
-
-## Features
-
-- PDF Document Ingestion
-- Financial Table Extraction
-- Excel Generation
-- Text Chunking
-- Sentence Transformer Embeddings
-- FAISS Vector Database
-- Retrieval-Augmented Generation (RAG)
-- Google Gemini API
-- Role-Based Access Control
-- Feedback Collection
-- Interactive Gradio User Interface
+</p>
 
 ---
 
-## Technologies Used
+# 🚀 Features
 
-- Python
-- Google Gemini API
-- Sentence Transformers
-- FAISS
-- pdfplumber
-- Pandas
-- NumPy
-- OpenPyXL
-- Gradio
+✅ Financial PDF Ingestion
 
----
+✅ Financial Table Extraction
 
-## Project Workflow
+✅ Excel Generation
 
-1. Upload financial reports.
-2. Extract text using pdfplumber.
-3. Generate financial Excel sheet.
-4. Split text into chunks.
-5. Generate embeddings.
-6. Store embeddings inside FAISS.
-7. Retrieve relevant chunks.
-8. Send retrieved context to Gemini.
-9. Generate final answer.
-10. Apply Role-Based Access Control.
-11. Store user feedback.
+✅ Text Chunking
+
+✅ Sentence Transformer Embeddings
+
+✅ FAISS Vector Database
+
+✅ Retrieval-Augmented Generation (RAG)
+
+✅ Google Gemini API
+
+✅ Role-Based Access Control
+
+✅ Feedback Collection
+
+✅ Interactive Gradio Web Interface
 
 ---
 
-## Folder Structure
+# 🏗️ Project Architecture
 
-```text
-AI_Financial_Assistant.ipynb
-chunks.json
-financial_index.faiss
-feedback.json
-financial_data.xlsx
+```
+                      Financial Report (PDF)
+                               │
+                               ▼
+                     PDF Text Extraction
+                               │
+                               ▼
+                      Financial Tables
+                               │
+                               ▼
+                       Text Chunking
+                               │
+                               ▼
+                 Sentence Transformer Embeddings
+                               │
+                               ▼
+                      FAISS Vector Database
+                               │
+                User Question ─┤
+                               ▼
+                  Semantic Similarity Search
+                               │
+                               ▼
+                     Retrieved Context
+                               │
+                               ▼
+                   Google Gemini API (LLM)
+                               │
+                               ▼
+                Role-Based Access Control
+                               │
+                               ▼
+                       Final AI Response
+                               │
+                               ▼
+                     User Feedback Storage
 ```
 
 ---
 
-## Installation
+# 📂 Repository Structure
+
+```
+AI-Financial-Assistant
+│
+├── AI_Financial_Assistant.ipynb
+├── README.md
+├── requirements.txt
+├── annual_report.pdf
+├── financial_data.xlsx
+├── financial_index.faiss
+├── chunks.json
+├── feedback.json
+├── sample_questions.txt
+└── LICENSE
+```
+
+---
+
+# ⚙️ Technologies Used
+
+| Technology | Purpose |
+|------------|----------|
+| Python | Programming Language |
+| Google Gemini API | LLM Response Generation |
+| Sentence Transformers | Text Embeddings |
+| FAISS | Semantic Vector Search |
+| pdfplumber | PDF Text Extraction |
+| Pandas | Data Processing |
+| NumPy | Numerical Operations |
+| OpenPyXL | Excel File Generation |
+| Gradio | Interactive Web UI |
+
+---
+
+# 🔄 Workflow
+
+### 1️⃣ Document Ingestion
+
+- Upload Annual Report PDF
+- Extract text using pdfplumber
+
+↓
+
+### 2️⃣ Data Processing
+
+- Extract financial tables
+- Convert tables into Excel
+
+↓
+
+### 3️⃣ Knowledge Base
+
+- Split report into chunks
+- Generate embeddings
+- Store embeddings in FAISS
+
+↓
+
+### 4️⃣ User Query
+
+- Convert question to embedding
+- Retrieve relevant chunks
+
+↓
+
+### 5️⃣ AI Response
+
+- Send retrieved context to Gemini API
+- Generate context-aware answer
+
+↓
+
+### 6️⃣ RBAC
+
+Different users have different permissions.
+
+| Role | Access |
+|------|---------|
+| CEO | Full Access |
+| CTO | Restricted Executive Information |
+| Intern | Public Financial Information Only |
+
+↓
+
+### 7️⃣ Feedback
+
+Store Helpful / Not Helpful responses in JSON.
+
+---
+
+# 🔒 Role-Based Access Control
+
+## 👔 CEO
+
+✔ Full access to financial information
+
+Examples
+
+- Total Revenue
+- Executive Compensation
+- Cash Holdings
+- Acquisitions
+
+---
+
+## 💻 CTO
+
+Restricted
+
+- Executive Compensation
+- Salary
+- Headcount
+
+Allowed
+
+- Revenue
+- Net Income
+- Operating Expenses
+
+---
+
+## 🎓 Intern
+
+Allowed
+
+- Revenue
+- Gross Margin
+- Product Sales
+
+Restricted
+
+- Executive Information
+- Salary
+- Cash Holdings
+- Investments
+- Acquisitions
+
+---
+
+# 💻 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/yourusername/AI-Financial-Assistant.git
+```
+
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -77,58 +241,84 @@ pip install -r requirements.txt
 
 ---
 
-## Running the Project
+# 🔑 Gemini API Setup
 
-1. Open the notebook in Google Colab.
-2. Add your Gemini API key.
-3. Run all cells.
-4. Launch the Gradio interface.
-5. Ask financial questions.
+Replace
+
+```python
+api_key="YOUR_API_KEY"
+```
+
+with your own Gemini API key.
 
 ---
 
-## User Roles
+# ▶️ Running
+
+Open
+
+```
+AI_Financial_Assistant.ipynb
+```
+
+Run all cells.
+
+Launch the Gradio interface.
+
+---
+
+# 📈 Sample Questions
 
 ### CEO
 
-- Full Access
+- What was Apple's total revenue?
+- What was Apple's executive compensation?
+- How much cash did Apple have?
 
 ### CTO
 
-Restricted from:
-
-- Salary
-- Compensation
-- Headcount
+- What was Apple's net income?
+- What were Apple's operating expenses?
 
 ### Intern
 
-Restricted from:
-
-- Salary
-- Executive Information
-- Cash
-- Investment
-- Acquisition
+- What was Apple's gross margin?
+- What were Apple's product sales?
 
 ---
 
-## Understanding Files
+# 📊 Generated Files
 
-The following files are generated by the system.
-
-- financial_index.faiss
-- chunks.json
-
-These files allow the assistant to reuse the vector index without rebuilding it.
+| File | Purpose |
+|------|----------|
+| chunks.json | Document Chunks |
+| financial_index.faiss | Vector Index |
+| feedback.json | User Feedback |
+| financial_data.xlsx | Financial Tables |
 
 ---
 
-## Future Improvements
+# 🎯 Future Improvements
 
-- Pinecone or Milvus instead of FAISS
-- Database storage for feedback
-- Metadata-based RBAC
-- Authentication
-- Conversation memory
-- Streaming responses
+- Conversation Memory
+- Pinecone Vector Database
+- User Authentication
+- Streaming Responses
+- Metadata-Based RBAC
+- Multi-document Support
+
+---
+
+# 👨‍💻 Author
+
+**Subhrajeet Kumar**
+
+AI Agent Developer Assessment
+
+SOA University
+
+---
+
+# 📜 License
+
+MIT License
