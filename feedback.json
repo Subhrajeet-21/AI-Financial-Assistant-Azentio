@@ -1,0 +1,17 @@
+[
+    {
+        "question": "What was Apple's total revenue?",
+        "answer": "According to the Consolidated Statements of Operations in the provided context, Apple's total revenue (recorded as \"Total net sales\") was:\n\n* **2025:** $416,161 million ($416.161 billion)\n* **2024:** $391,035 million ($391.035 billion)\n* **2023:** $383,285 million ($383.285 billion)",
+        "rating": "\ud83d\udc4d"
+    },
+    {
+        "question": "What was Apple's total revenue?",
+        "answer": "Based on the provided context, Apple's total net sales (total revenue) for the fiscal years ended 2025, 2024, and 2023 were:\n\n* **2025:** $416,161 million (or ~$416.16 billion)\n* **2024:** $391,035 million (or ~$391.04 billion)\n* **2023:** $383,285 million (or ~$383.29 billion)",
+        "rating": "Excellent"
+    },
+    {
+        "question": "What was Apple's total revenue?",
+        "answer": "Based on the provided financial documents, Apple's total revenue (recorded as \"Total net sales\") is as follows:\n\n| Year Ended | Total Net Sales (in millions) |\n| :--- | :--- |\n| September 27, 2025 | $416,161 |\n| September 28, 2024 | $391,035 |\n| September 30, 2023 | $383,285 |",
+        "rating": "Excellent"
+    }
+]
