@@ -1,0 +1,37 @@
+CEO
+
+What was Apple's total revenue?
+
+What was Apple's net income?
+
+What was Apple's gross margin?
+
+What were Apple's operating expenses?
+
+How much cash did Apple have?
+
+What is executive compensation?
+
+----------------------------------------------------
+
+CTO
+
+What was Apple's total revenue?
+
+What was Apple's operating expenses?
+
+What was Apple's net income?
+
+What is executive compensation?
+
+----------------------------------------------------
+
+Intern
+
+What was Apple's total revenue?
+
+What was Apple's gross margin?
+
+What were Apple's product sales?
+
+How much cash did Apple have?
