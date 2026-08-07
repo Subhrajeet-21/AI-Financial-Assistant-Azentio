@@ -230,7 +230,7 @@ Restricted
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/AI-Financial-Assistant.git
+git clone https://github.com/Subhrajeet-21/AI-Financial-Assistant.git
 ```
 
 Install dependencies
@@ -311,7 +311,7 @@ Launch the Gradio interface.
 
 # 👨‍💻 Author
 
-**Subhrajeet Kumar**
+**Subhrajeet Mohanty**
 
 AI Agent Developer Assessment
 
