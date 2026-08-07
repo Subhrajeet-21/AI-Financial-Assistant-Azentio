@@ -1,0 +1,9 @@
+google-genai
+sentence-transformers
+faiss-cpu
+numpy
+pandas
+pdfplumber
+openpyxl
+gradio
+scikit-learn
