@@ -297,7 +297,7 @@ Launch the Gradio interface.
 
 ---
 
-# 🎯 Future Improvements
+# 🎯 Future Improvements for *Azentio*
 
 - Conversation Memory – Remember previous questions and answers for follow-up queries.
 - Pinecone Vector Database – Use a scalable cloud-based vector database instead of local FAISS.
