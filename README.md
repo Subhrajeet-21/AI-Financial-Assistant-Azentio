@@ -299,12 +299,12 @@ Launch the Gradio interface.
 
 # 🎯 Future Improvements
 
-- Conversation Memory
-- Pinecone Vector Database
-- User Authentication
-- Streaming Responses
-- Metadata-Based RBAC
-- Multi-document Support
+- Conversation Memory – Remember previous questions and answers for follow-up queries.
+- Pinecone Vector Database – Use a scalable cloud-based vector database instead of local FAISS.
+- User Authentication – Add login-based authentication and automatically assign user roles.
+- Streaming Responses – Display Gemini responses progressively for a faster user experience.
+- Metadata-Based RBAC – Use document metadata and permissions for more precise access control.
+- Multi-Document Support – Support multiple financial reports, companies, and financial years.
 
 ---
 
