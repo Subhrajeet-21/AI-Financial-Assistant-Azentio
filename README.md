@@ -42,7 +42,7 @@ An AI-powered Financial Assistant that answers questions from financial reports 
 
 ---
 
-# 🏗️ Project Architecture
+# Project Architecture
 
 ```
                       Financial Report (PDF)
@@ -87,18 +87,18 @@ An AI-powered Financial Assistant that answers questions from financial reports 
 # 📂 Repository Structure
 
 ```
-AI-Financial-Assistant
+AI-Financial-Assistant-Azentio/
 │
-├── AI_Financial_Assistant.ipynb
+├── AiFinancialAssistant.ipynb
+├── LICENSE
 ├── README.md
-├── requirements.txt
 ├── annual_report.pdf
-├── financial_data.xlsx
-├── financial_index.faiss
 ├── chunks.json
 ├── feedback.json
-├── sample_questions.txt
-└── LICENSE
+├── financial_data.xlsx
+├── financial_index.faiss
+├── requirements.txt
+└── sample_questions.txt
 ```
 
 ---
@@ -121,21 +121,21 @@ AI-Financial-Assistant
 
 # 🔄 Workflow
 
-### 1️⃣ Document Ingestion
+### 1 Document Ingestion
 
 - Upload Annual Report PDF
 - Extract text using pdfplumber
 
 ↓
 
-### 2️⃣ Data Processing
+### 2 Data Processing
 
 - Extract financial tables
 - Convert tables into Excel
 
 ↓
 
-### 3️⃣ Knowledge Base
+### 3 Knowledge Base
 
 - Split report into chunks
 - Generate embeddings
@@ -143,21 +143,21 @@ AI-Financial-Assistant
 
 ↓
 
-### 4️⃣ User Query
+### 4 User Query
 
 - Convert question to embedding
 - Retrieve relevant chunks
 
 ↓
 
-### 5️⃣ AI Response
+### 5 AI Response
 
 - Send retrieved context to Gemini API
 - Generate context-aware answer
 
 ↓
 
-### 6️⃣ RBAC
+### 6 RBAC
 
 Different users have different permissions.
 
@@ -169,7 +169,7 @@ Different users have different permissions.
 
 ↓
 
-### 7️⃣ Feedback
+### 7 Feedback
 
 Store Helpful / Not Helpful responses in JSON.
 
@@ -266,7 +266,7 @@ Launch the Gradio interface.
 
 ---
 
-# 📈 Sample Questions
+#  Sample Questions
 
 ### CEO
 
@@ -334,7 +334,7 @@ Launch the Gradio interface.
 
 **Subhrajeet Mohanty**
 
-AI Agent Developer Assessment
+AI Agent Developer Assessment of *Azentio*
 
 ITER, SOA University
 
