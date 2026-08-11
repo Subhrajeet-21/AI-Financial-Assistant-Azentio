@@ -121,21 +121,21 @@ AI-Financial-Assistant-Azentio/
 
 # 🔄 Workflow
 
-### 1 Document Ingestion
+### 1. Document Ingestion
 
 - Upload Annual Report PDF
 - Extract text using pdfplumber
 
 ↓
 
-### 2 Data Processing
+### 2. Data Processing
 
 - Extract financial tables
 - Convert tables into Excel
 
 ↓
 
-### 3 Knowledge Base
+### 3. Knowledge Base
 
 - Split report into chunks
 - Generate embeddings
@@ -143,21 +143,21 @@ AI-Financial-Assistant-Azentio/
 
 ↓
 
-### 4 User Query
+### 4. User Query
 
 - Convert question to embedding
 - Retrieve relevant chunks
 
 ↓
 
-### 5 AI Response
+### 5. AI Response
 
 - Send retrieved context to Gemini API
 - Generate context-aware answer
 
 ↓
 
-### 6 RBAC
+### 6. RBAC
 
 Different users have different permissions.
 
@@ -169,7 +169,7 @@ Different users have different permissions.
 
 ↓
 
-### 7 Feedback
+### 7. Feedback
 
 Store Helpful / Not Helpful responses in JSON.
 
